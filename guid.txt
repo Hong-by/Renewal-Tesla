@@ -1,0 +1,30 @@
+----Font----
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+</style>
+
+font-family: 'Noto Sans KR','Roboto', sans-serif;
+
+------Color-----------
+
+cubic-bezier(0.5,0,0,0.75)
+
+//blue
+#2e4994
+#3457b2
+#3d69e1
+
+//green
+#13bd00
+
+//black
+#181b21
+#212121
+#454545
+
+//red
+#b74134
+#ed4d3b
+
+//yellow
+#fcb11d

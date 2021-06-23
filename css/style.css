@@ -1,0 +1,27 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+
+.wrapper{width: 100%; height: auto; position: relative;}
+
+/* header Style Code */
+header{position: absolute; width: 100%; display: flex; background: rgba(0, 0, 0, 0);}
+header h1{width: 15%; padding: 15px 0 15px 50px;}
+header h1 a{width: 100%;}
+header h1 a img{width: 110px;}
+
+header ul li{transition: all 0.4s;}
+.main-menu{width: 80%; display: flex; justify-content: center; align-items: center; height: auto;}
+.main-menu li{width: 100px; text-align: center; font-weight: 400; }
+
+.second-menu{width: 15%; display: flex; justify-content: flex-end; align-items: center; padding-right: 50px;}
+.second-menu li{width: 60px; text-align: center; font-weight: 400;}
+
+header ul li:hover{background: rgba(60, 60, 60, 0.3); padding: 5px 10px; border-radius: 10px;;}
+
+/* Main Section Layout Code */
+.layout{width: 100%; height: 100vh;}
+.layout.modelS{background-image: url(../img/desktop/Desktop-ModelY.jpg); background-size: cover; background-position: center;}
+
+
+.layout .model-title{width: 100%; display: flex; align-items: center; flex-direction: column; padding: 100px;}
+.layout .model-title h2{font-size: 42px; font-weight: 700;}
