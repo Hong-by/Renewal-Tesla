@@ -16,12 +16,18 @@ header ul li{transition: all 0.4s;}
 .second-menu{width: 15%; display: flex; justify-content: flex-end; align-items: center; padding-right: 50px;}
 .second-menu li{width: 60px; text-align: center; font-weight: 400;}
 
-header ul li:hover{background: rgba(60, 60, 60, 0.3); padding: 5px 10px; border-radius: 10px;;}
+header ul li:hover{background: rgba(60, 60, 60, 0.3); padding: 5px 10px; border-radius: 15px;;}
 
 /* Main Section Layout Code */
 .layout{width: 100%; height: 100vh;}
-.layout.modelS{background-image: url(../img/desktop/Desktop-ModelY.jpg); background-size: cover; background-position: center;}
+.layout.modelY{background-image: url(../img/desktop/Desktop-ModelY.jpg); background-size: cover; background-position: center;}
 
 
-.layout .model-title{width: 100%; display: flex; align-items: center; flex-direction: column; padding: 100px;}
-.layout .model-title h2{font-size: 42px; font-weight: 700;}
+.layout .model-title{text-align: center; width: 100%; height: 70%;}
+.layout .model-title h2{font-size: 42px; font-weight: 700; padding-top: calc(16vh - 20px); color: #454545;}
+.layout .model-title a{border-bottom: 1px solid #454545;}
+
+.layout .btns{width: 100%; height: 20%; display: flex; align-items: flex-end; justify-content: center;}
+.layout .btns a{width: 250px; text-align: center; margin: 0 20px; padding: 10px 20px; background: #181b21; border-radius: 20px; font-size: 12px;}
+.layout .btns a:nth-child(1){background: #181b21; border-radius: 20px; color: #fff;}
+.layout .btns a:nth-child(2){background: #fefefe; border-radius: 20px;}
