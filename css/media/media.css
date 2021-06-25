@@ -1,8 +1,12 @@
-@media screen and (max-width: 1280px){
-
+@media screen and (max-width: 1200px){
+header ul{display: none!important;}
+.mobile_menu, .mobile_btn{display:block}
+.modal_wrap{overflow: auto;}
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 640px){
+  .main-con .btns{display: flex; flex-direction: column; align-items: center;}
+  .main-con .btns a{width: 100%; margin-top: 10px;}
   
 }
 
