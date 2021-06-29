@@ -4,7 +4,7 @@
 .wrapper{width: 100%; height: auto; position: relative;}
 
 /* header Style Code */
-header{position: fixed; width: 100%; display: flex; background: rgba(0, 0, 0, 0); z-index: 999;}
+header{position: fixed; width: 100%; display: flex; background: rgba(0, 0, 0, 0); z-index: 10;}
 header h1{width: 15%; padding: 15px 0 15px 50px;}
 header h1 a{width: 100%;}
 header h1 a img{width: 110px;}
@@ -28,7 +28,7 @@ header ul li:hover{background: rgba(60, 60, 60, 0.3); padding: 5px 10px; border-
 .bg.Power{background-image: url(../img/desktop/main05.jpg); background-size: cover; background-position: center;}
 
 .layout{position: absolute; top: 0; width: 100%; height: auto; }
-.layout .main-con{width: 100%; height: 100vh;}
+.layout .main-con, .modelCon{width: 100%; height: 100vh; _position: fixed; transition: all 3s;}
 .layout .model-title{text-align: center; width: 100%; height: 70%; _position: fixed;}
 .layout .model-title h2{font-size: 42px; font-weight: 700; padding-top: calc(16vh - 20px); color: #454545;}
 .layout .model-title a{border-bottom: 1px solid #454545;}
@@ -40,8 +40,15 @@ header ul li:hover{background: rgba(60, 60, 60, 0.3); padding: 5px 10px; border-
 
 .Power>.btns a{margin-bottom: 30px;}
 
-.main-con.active{transition: 3s; opacity: 1;}
-.visi{opacity: 0.1; transition: 3s;}
+/* .main-con.active{_transition:all 3s; opacity: 1; top: 0; animation: fadeIn 1s; display: block;}
+.visi{opacity: 1; transition: 3s; display: none; _position: sticky; top: 0; _visibility: hidden; _transition: all 0.4s; animation: fadeOut 1s;} */
+
+.layout .main-con{visibility: hidden; position: fixed;}
+/* .layout div{visibility: hidden;} */
+/* .layout nav div{visibility: visible; } */
+
+.fadeOut{visibility: hidden !important; opacity: 0; transition: visibility 0s linear 0ms, opacity 4000ms;}
+.fadeIn{visibility: visible !important; opacity: 1; transition: visibility 0s linear 0s, opacity 4000ms;}
 
 
 /* Footer Style Code */
@@ -52,9 +59,9 @@ footer ul a{color: #fff; font-size: 10px; font-weight: 300;}
 footer p{width: 90%; text-align: center; font-size: 10px; font-weight: 300; margin: 0 auto;}
 
 /* moda Menu Style Code */
-.modal_menu{position: absolute; top: 0; width: 100%; height: 100%; display: none;z-index: 9999;}
+.modal_menu{position: absolute; top: 0; width: 100%; height: 100%; display: none;z-index: 20; left: 0;}
 
-.modal_menu .menuigm{top: 0; width: 100%; height: 100%; position: absolute;
+.modal_menu .menuigm{top: 0; width: 100%; height: 100%; position: fixed;
 }
 
 .blur{  display: block;
@@ -69,25 +76,46 @@ footer p{width: 90%; text-align: center; font-size: 10px; font-weight: 300; marg
   height: 100%;
 }
 
-.modal_menu .menu{width: 300px; background: #fefefe; z-index: 99999; position: absolute; right: 0; height: 100%; box-shadow: 5px 0 0 0 rgba(0, 0, 0, 0.06);}
-.modal_menu .menu p{display: inline-block; border-radius: 25px; width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; position: absolute; right: 30px; top : 15px; font-size: 24px;}
+.modal_menu .menu{width: 300px; background: #fefefe; z-index: 30; position: absolute; right: 0; height: 100%; box-shadow: 5px 0 0 0 rgba(0, 0, 0, 0.06);}
+.modal_menu .menu .close-btn{width: 100%; height: 80px; background: #fefefe; z-index: 40; position: sticky; top: 0; display: flex; justify-content: right; align-items: center;}
+.modal_menu .menu p{display: inline-block; border-radius: 25px; width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; position: fixed; right: 30px; top : 15px; font-size: 24px;}
 .modal_menu .menu p:hover{background: #f3f3f3;}
-.modal_menu .modal_wrap{padding-top: 60px;}
+/* .modal_menu .modal_wrap{padding-top: 60px;} */
 .modal_menu .menu ul{width: 100%; padding: 0 0 0 40px;}
 .modal_menu .menu ul li{padding: 10px;}
 .modal_active{display: block;}
 
 
 /* Mobile Menu Style Code */
-.mobile_menu{position: fixed; right: 15px; top: 15px; border-radius: 15px; background: rgba(60, 60, 60, 0.3); padding: 5px 10px; font-size: 12px; width: 60px; text-align: center; display: none;}
-.mobile_btn{display: none;}
+.mobile_menu{position: fixed; right: 15px; top: 15px; border-radius: 15px; background: rgba(60, 60, 60, 0.3); padding: 5px 10px; font-size: 12px; width: 60px; text-align: center; display: none; right: 0; height: auto; overflow-y: initial !important;}
+.mobile_btn{display: none; margin-top: 10px;}
+.modal_wrap{padding-bottom: 100px;}
+.modal_wrap .second-menu{display: none;}
+.modal_wrap .second-menu li{text-align: left;}
+.modal_wrap .second-menu li:nth-child(4) a{text-decoration: none; display: flex; justify-content: space-between; align-items: center;}
+
+.modal_wrap{overflow: auto; height: 100vh;}
+.modal_wrap li{width: 90%; padding: 5px 10px; border-radius: 15px; transition: all 0.4s;}
+.modal_wrap li:hover{background: rgba(60, 60, 60, 0.1); padding: 5px 10px; border-radius: 15px; transition: all 0.4s;}
 
 
+i{font-style: normal;}
+/* ModelS Page Style Code */
 
+.modelS-img .bg.modelS01{background-image: url(../img/modelS/modelS01.jpg); background-size: cover; background-position: center;}
 
+.modelCon{display: flex; flex-direction: column; justify-content: space-between; align-items: center;}
+.layout .model-title p{font-weight: 100; font-size: 14px; color: #454545;}
 
+.modelCon .bottomCon{width: 100%; display: flex; justify-content: center; flex-direction: column; align-items: center; padding: 30px 0; }
+.modelCon .bottomCon-wrap{display: flex; justify-content: space-between; width: 42%; color: #fff; text-align: center; padding: 20px 0;}
+/* .bottomCom-txt{width: 100%;} */
+.modelCon .bottomCon-wrap .number{font-size: 28px; font-weight: 600;}
+.modelCon .bottomCon-wrap .number i{font-style: normal; font-size: 26px; font-weight: 600;}
+.modelCon .bottomCon-wrap .number-intro{font-size: 12px; font-weight: 300;}
+.modelCon .bottomCon-wrap .bottomCom-btn{display: flex; align-items: center;}
 
+.modelCon .bottomCon-wrap .bottomCom-btn a{color: #fff;  font-size: 10px; border: 3px solid #fff; padding: 5px 32px; border-radius: 20px; padding-bottom: 8px;}
+.modelCon .bottomCon-wrap .bottomCom-btn a:hover{background: #fff; color: #181b21; transition: all 0.4s;}
 
-/* dabipyeung.com/hubble
-
-mainHeader.js 확인 */
+.bottomCon .bottomTxt p{color: #fff; font-size: 12px; font-weight: 300;}
