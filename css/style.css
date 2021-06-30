@@ -28,7 +28,7 @@ header ul li:hover{background: rgba(60, 60, 60, 0.3); padding: 5px 10px; border-
 .bg.Power{background-image: url(../img/desktop/main05.jpg); background-size: cover; background-position: center;}
 
 .layout{position: absolute; top: 0; width: 100%; height: auto; }
-.layout .main-con, .modelCon{width: 100%; height: 100vh; _position: fixed; transition: all 3s;}
+.layout .main-con, .modelCon{width: 100%; height: 100vh; _position: fixed;}
 .layout .model-title{text-align: center; width: 100%; height: 70%; _position: fixed;}
 .layout .model-title h2{font-size: 42px; font-weight: 700; padding-top: calc(16vh - 20px); color: #454545;}
 .layout .model-title a{border-bottom: 1px solid #454545;}
@@ -100,10 +100,15 @@ footer p{width: 90%; text-align: center; font-size: 10px; font-weight: 300; marg
 
 
 i{font-style: normal;}
-/* ModelS Page Style Code */
 
+
+/* ModelS background Image Code */
 .modelS-img .bg.modelS01{background-image: url(../img/modelS/modelS01.jpg); background-size: cover; background-position: center;}
+.modelS-img .blackBar{width: 100%; background: black; height: 100px;}
+.modelS-img .bg.modelS02{background-image: url(../img/modelS/modelS02.jpg);background-size: cover; background-position: top; height: 100vh;}
+.blackbg{background: black; height: 100%;}
 
+/* ModelS Page 1 Style Code */
 .modelCon{display: flex; flex-direction: column; justify-content: space-between; align-items: center;}
 .layout .model-title p{font-weight: 100; font-size: 14px; color: #454545;}
 
@@ -119,3 +124,41 @@ i{font-style: normal;}
 .modelCon .bottomCon-wrap .bottomCom-btn a:hover{background: #fff; color: #181b21; transition: all 0.4s;}
 
 .bottomCon .bottomTxt p{color: #fff; font-size: 12px; font-weight: 300;}
+
+/* ModelS Page 2 Style Code */
+.blackBar{color: #fff; padding: 15px; font-size: 24px; font-weight: 300; display: flex; justify-content: center;height: 100px;}
+
+/* ModelS Page 3 Style Code */
+.slideBox-wrap{width: 90%; padding-top: 80px; margin: 0 auto; display: flex; position: relative; flex-direction: column; align-items: center; height: 100%;}
+.slideBox-wrap .slideBox-container{ width: 100%; max-width: 1090px; height: auto; display: flex; align-items: center; position: relative;}
+.slideBox-wrap .slideBox-container .slideBox{width: 100%;margin: 0 auto; display: none;}
+.slideBox-wrap .slideBox-container .slideBox img{width: 100%;}
+.slideBtn{position: absolute; width: 100%;}
+.slideBtn a{font-size: 18px; color: #fff; border: 3px solid; padding: 0 10px 3px 10px; text-align: center; position: absolute; background: rgba(0, 0, 0, 0.3); cursor: pointer;}
+.slideBtn a:nth-child(1){left: 30px;}
+.slideBtn a:nth-child(2){right: 30px;}
+
+.notxt{width: 100%; height: 100vh;}
+
+.slideBody{width: 100%; max-width: 1090px; display: flex; justify-content: center; padding: 30px 0;}
+.slideBody .slideDot{display: flex; justify-content: center; padding: 10px;}
+.slideBody .slideDot .dot{cursor: pointer; height: 8px; width: 8px; border-radius: 50%; display: inline-block; margin: 0 5px; transition: all 0.4s; border: 1px solid #fff; right: 0;}
+/* .slideBody .slideTxt{width: 100%; display: ;} */
+.slideBody .slideTxt_body{max-width: 650px;left: 0; display: none;}
+.slideTxt_body h3{font-size: 24px; color: #fff; font-weight: 400; padding: 0 10px;}
+.slideTxt_body p{color: #fff; padding: 10px;}
+
+.dot.active{background: #fff;}
+
+.blackBar{background: black;}
+.boxCon-wrap{max-width: 1090px;  display: flex; flex-wrap: wrap; margin: 100px;}
+.boxCon-wrap .boxCon{width: 50%; color: #fff; display: flex; flex-direction: column;}
+.boxCon-wrap .boxCon img{width: 100%;}
+.boxCon .boxTxt{width: 80%;}
+.boxCon .boxTxt h4{padding: 20px 0;}
+.boxCon .boxTxt p{padding-bottom: 30px;}
+
+.boxCon-wrap .boxCon:nth-child(2){align-items: flex-end; justify-content: center;}
+.boxCon-wrap .boxCon:nth-child(3){align-items: flex-start; justify-content: center;}
+.boxCon-wrap .boxCon:nth-child(6){align-items: flex-end; justify-content: center;}
+.boxCon-wrap .boxCon:nth-child(7){align-items: flex-start; justify-content: center;}
