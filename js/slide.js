@@ -94,3 +94,18 @@ document.querySelector('.slideBox-wrap').addEventListener("mouseover", ()=>{
 document.querySelector('.slideBox-wrap').addEventListener("mouseout", ()=>{
   start = setInterval(slideShow, 2000);
 });
+
+//파워트레일 슬라이드
+//이미지 변수 저장
+const trImg = document.querySelectorAll('.trImg');
+const trainBtn = document.querySelectorAll('.trainIBtn');
+const infoBox = document.querySelector('.infoBox')
+
+//이미지 초기화
+for(let j = 0; j < trImg.length; j++){
+  trImg[j].style.display = 'none';
+  trainBtn[j].classList.remove('check');
+}
+
+
+console.log(infoBox);

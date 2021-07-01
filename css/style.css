@@ -106,7 +106,7 @@ i{font-style: normal;}
 .modelS-img .bg.modelS01{background-image: url(../img/modelS/modelS01.jpg); background-size: cover; background-position: center;}
 .modelS-img .blackBar{width: 100%; background: black; height: 100px;}
 .modelS-img .bg.modelS02{background-image: url(../img/modelS/modelS02.jpg);background-size: cover; background-position: top; height: 100vh;}
-.blackbg{background: black; height: 100%;}
+.blackbg{background: black; height: 90vh;}
 
 /* ModelS Page 1 Style Code */
 .modelCon{display: flex; flex-direction: column; justify-content: space-between; align-items: center;}
@@ -129,6 +129,8 @@ i{font-style: normal;}
 .blackBar{color: #fff; padding: 15px; font-size: 24px; font-weight: 300; display: flex; justify-content: center;height: 100px;}
 
 /* ModelS Page 3 Style Code */
+.blackbg-wrap{position: relative; height: 250vh; background: black;}
+
 .slideBox-wrap{width: 90%; padding-top: 80px; margin: 0 auto; display: flex; position: relative; flex-direction: column; align-items: center; height: 100%;}
 .slideBox-wrap .slideBox-container{ width: 100%; max-width: 1090px; height: auto; display: flex; align-items: center; position: relative;}
 .slideBox-wrap .slideBox-container .slideBox{width: 100%;margin: 0 auto; display: none;}
@@ -162,3 +164,46 @@ i{font-style: normal;}
 .boxCon-wrap .boxCon:nth-child(3){align-items: flex-start; justify-content: center;}
 .boxCon-wrap .boxCon:nth-child(6){align-items: flex-end; justify-content: center;}
 .boxCon-wrap .boxCon:nth-child(7){align-items: flex-start; justify-content: center;}
+
+/* ModelS Page 4 Style Code */
+.modelS11{background-image: url(../img/modelS/modelS11.jpg); background-size: cover; background-position: center; width: 100%; height: 75%; position: relative;}
+.modelS11 .bottomCon-wrap{max-width: 570px;}
+
+.modelS11 .bottomCon{position: absolute; bottom: 25px; }
+
+.modelS11-txt{width: 100%; height: 30%; display: flex; justify-content: center; align-items: flex-start; padding-top: 50px;}
+.modelS11-txt-center{display: flex; max-width: 950px; flex-wrap: wrap;}
+.modelS11-txt-center-tit{width: 37%;}
+.modelS11-txt-center-tit i{font-weight: 300; font-size: 16px;}
+.modelS11-txt-center-tit p{font-size: 30px; font-weight: 400; line-height: 95%;}
+.modelS11-txt-center-body{width: 63%; font-weight: 300; font-size: 15px;}
+.modelS11-txt-center-btn{height: 30px; margin-top: 15px;}
+.modelS11-txt-center-btn a{color: #111;  font-size: 12px; border: 3px solid #111; padding: 5px 32px; border-radius: 20px; padding-bottom: 8px; font-weight: 300;}
+.modelS11-txt-center-btn a:hover{background: black; color: #fff; transition: all 0.4s;}
+
+
+/* ModelS Page 5 Style Code */
+.greybg{background: #f5f5f5; height: auto;}
+.tranin-wrap{max-width: 900px; display: flex; flex-direction: column; align-items: center; padding-top: 80px;}
+
+.tranin-wrap .trainImg{width: 100%;}
+.tranin-wrap .trainImg img{width: 100%;}
+
+.tranin-wrap .train-tit{max-width: 750px;}
+.tranin-wrap .train-tit h3{font-size: 28px; font-weight: 300; line-height: 36px; margin-bottom: 15px;}
+.tranin-wrap .train-tit p{margin-bottom: 30px; font-size: 15px; font-weight: 300; width: 90%;}
+
+.trainIBtn-wrap{width: 100%; padding: 20px 10px; display: flex; justify-content: center; position: relative;}
+.trainIBtn-wrap .trainIBtn{width: 396px; height: 190px; border-top: 3px solid #181b21; padding: 15px; margin: 0 15px; color: #656565; cursor: pointer;}
+.trainIBtn-wrap .trainIBtn h5{font-size: 18px; font-weight: 400; margin-bottom: 10px;}
+.trainIBtn-wrap .trainIBtn .body{font-weight: 300; margin-bottom: 10px;}
+.trainIBtn-wrap .trainIBtn .info-wrap{display: flex; width: 100%;}
+.trainIBtn-wrap .trainIBtn .info-wrap .info{width: 50%; margin-top: 5px; color: #656565;}
+.trainIBtn-wrap .trainIBtn .info-wrap .info p{font-size: 24px; font-weight: 700;}
+
+
+.infoBox{position: absolute; border: 3px solid #181b21; width: 100%; width:396px; height: 190px; top: 0; margin: 20px 39px; left: 0;}
+
+.trainIBtn.check{color: #181b21;}
+
+.tranin-wrap>p{margin-bottom: 100px; font-weight: 300; padding: 20px 0; color: #656565;}
