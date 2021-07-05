@@ -1,13 +1,19 @@
 @media screen and (max-width: 1200px){
 header ul{display: none!important;}
-.mobile_menu, .mobile_btn, .modal_wrap .second-menu{display:block}
+header h1{padding: 20px 0 20px 30px;}
+.mobile_menu, .mobile_btn, .modal_wrap .second-menu{display:block; margin: 2px;}
 .modal_wrap{overflow: auto;}
 footer{width: 100%;}
 }
 
+@media screen and (max-width: 840px){
+
+}
+
+
 @media screen and (max-width: 640px){
   .main-con .btns{display: flex; flex-direction: column; align-items: center;}
-  .main-con .btns a{width: 100%; margin-top: 10px;}
+  .main-con .btns a{width: 100%; margin-top: 10px; transition: all 0.4s;}
   
   footer ul li:nth-child(4){display: none;}
   footer ul li:nth-child(5){display: none;}
@@ -15,6 +21,8 @@ footer{width: 100%;}
   footer ul li:nth-child(8){display: none;}
 }
 
-@media screen and (max-width: 480px){
-  
+@media screen and (max-width: 600px){
+  header h1{padding: 20px 0 20px 15px;}
+  .main-con .btns a{width: 90%; margin-top: 20px; padding: 12px 20px;}
+  .solorBtn{position: absolute; top: 50%;}
 }

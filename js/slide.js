@@ -101,11 +101,40 @@ const trImg = document.querySelectorAll('.trImg');
 const trainBtn = document.querySelectorAll('.trainIBtn');
 const infoBox = document.querySelector('.infoBox')
 
+console.log(trainBtn[1]);
+
+
+let trBtn = 0;
+
 //이미지 초기화
-for(let j = 0; j < trImg.length; j++){
-  trImg[j].style.display = 'none';
-  trainBtn[j].classList.remove('check');
+const clearTrain = () => {
+  for(let j = 0; j < trImg.length; j++){
+    trImg[j].style.display = 'none';
+    trainBtn[j].classList.remove('check');
+  }
+};
+clearTrain();
+
+
+
+
+function trainImg() {
+  trImg[trBtn].style.display = 'block';
+  trainBtn[trBtn].classList.add('check');
+  infoBox.style.left = 0;
+};
+trainImg();
+
+for(let n = 0; n < trImg.length; n++){
+  trainBtn[n].addEventListener('click', function(){
+    clearTrain();
+    trImg[n].style.display = 'block';
+    trainBtn[n].classList.add('check');
+    infoBox.style.left = 0;
+    infoBox.style.transform = "";
+    if(!n == 0){
+      infoBox.style.left = '50%';
+      infoBox.style.transform = 'translateX(-24px)';
+    }
+  });
 }
-
-
-console.log(infoBox);
