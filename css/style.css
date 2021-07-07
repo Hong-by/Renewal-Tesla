@@ -115,7 +115,7 @@ i{font-style: normal;}
 .layout .model-title p{font-weight: 100; font-size: 14px; color: #454545;}
 
 .modelCon .bottomCon{width: 100%; display: flex; justify-content: center; flex-direction: column; align-items: center; padding: 30px 0; }
-.modelCon .bottomCon-wrap{display: flex; justify-content: space-between; width: 800px; color: #fff; text-align: center; padding: 20px 0;}
+.modelCon .bottomCon-wrap{display: flex; justify-content: space-between; width: 100%; max-width: 800px; color: #fff; text-align: center; padding: 20px;}
 /* .bottomCom-txt{width: 100%;} */
 .modelCon .bottomCon-wrap .number{font-size: 28px; font-weight: 600;}
 .modelCon .bottomCon-wrap .number i{font-style: normal; font-size: 26px; font-weight: 600;}

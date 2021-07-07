@@ -6,10 +6,9 @@ header h1{padding: 20px 0 20px 30px;}
 footer{width: 100%;}
 }
 
-@media screen and (max-width: 840px){
-
+@media screen and (max-width: 900px){
+  .boxCon-wrap{margin: 0;}
 }
-
 
 @media screen and (max-width: 640px){
   .main-con .btns{display: flex; flex-direction: column; align-items: center;}
@@ -19,10 +18,39 @@ footer{width: 100%;}
   footer ul li:nth-child(5){display: none;}
   footer ul li:nth-child(6){display: none;}
   footer ul li:nth-child(8){display: none;}
+
+  .bg.modelY{background-image: url(../../img/mobile/mobile_01.jpg); background-size: cover; background-position: center;}
+.bg.model3{background-image: url(../../img/mobile/mobile_02.jpg); background-size: cover; background-position: center;}
+.bg.modelX{background-image: url(../../img/mobile/mobile_03.jpg); background-size: cover; background-position: center;}
+.bg.modelS, .modelS-img .bg.modelS01{background-image: url(../../img/mobile/mobile_04.jpg); background-size: cover; background-position: center;}
+.bg.Power{background-image: url(../../img/mobile/mobile_05.jpg); background-size: cover; background-position: center;}
+
+footer{bottom: 30px;}
+
+
+.modelCon .bottomCon-wrap{flex-wrap: wrap; justify-content: space-around;}
+.modelCon .bottomCon-wrap .bottomCom-txt:nth-child(4){display: none;}
+.modelCon .bottomCon-wrap .bottomCom-btn{width: 100%; justify-content: center;}
+.modelCon .bottomCon-wrap .bottomCom-btn{display: block; width: 100%;}
+.modelCon .bottomCon-wrap .bottomCom-btn a{display: block; width: 100%; margin-top: 15px; padding: 10px 32px; font-size: 14px; }
+
+.slideBox-wrap{width: 100%;}
+.slideBody{flex-direction: column;}
+.slideBody .slideDot{justify-content: flex-start;}
+
+
 }
 
 @media screen and (max-width: 600px){
   header h1{padding: 20px 0 20px 15px;}
   .main-con .btns a{width: 90%; margin-top: 20px; padding: 12px 20px;}
   .solorBtn{position: absolute; top: 50%;}
+}
+
+@media screen and (max-width: 400px){
+  .layout .model-title h2{font-size: 32px;}
+}
+
+@media screen and (max-width: 350px){
+  footer{display: none;}
 }
