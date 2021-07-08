@@ -133,8 +133,8 @@ for(let n = 0; n < trImg.length; n++){
     infoBox.style.left = 0;
     infoBox.style.transform = "";
     if(!n == 0){
-      infoBox.style.left = '50%';
-      infoBox.style.transform = 'translateX(-24px)';
+      infoBox.style.left = '100%';
+      infoBox.style.transform = 'translateX(-100%)';
     }
   });
 }

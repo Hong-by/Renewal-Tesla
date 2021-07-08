@@ -8,6 +8,22 @@ footer{width: 100%;}
 
 @media screen and (max-width: 900px){
   .boxCon-wrap{margin: 0;}
+  .boxCon-wrap .boxCon, .boxCon .boxTxt{width: 100%;}
+  .boxCon .boxTxt{padding: 10px 20px;}
+  .boxCon-wrap .boxCon:nth-child(1){order: 1;}
+  .boxCon-wrap .boxCon:nth-child(2){order: 2;}
+  .boxCon-wrap .boxCon:nth-child(3){order: 4;}
+  .boxCon-wrap .boxCon:nth-child(4){order: 3;}
+  .boxCon-wrap .boxCon:nth-child(5){order: 5;}
+  .boxCon-wrap .boxCon:nth-child(6){order: 6;}
+  .boxCon-wrap .boxCon:nth-child(7){order: 8;}
+  .boxCon-wrap .boxCon:nth-child(8){order: 7;}
+
+
+  .modelS11-txt{width: 90%;}
+  .modelS11-txt-center-btn{margin-top: 0;}
+
+  
 }
 
 @media screen and (max-width: 640px){
