@@ -26,6 +26,13 @@ footer{width: 100%;}
   
 }
 
+@media screen and (max-width: 700px){
+  .modelS11-txt-center-tit{width: 100%;}
+  .modelS11-txt-center-body{width: 100%; padding: 10px 0;}
+  .modelS11-txt-center-btn{margin-top: 10px;}
+  .layout>div:nth-child(5){height: 120vh;}
+}
+
 @media screen and (max-width: 640px){
   .main-con .btns{display: flex; flex-direction: column; align-items: center;}
   .main-con .btns a{width: 100%; margin-top: 10px; transition: all 0.4s;}
