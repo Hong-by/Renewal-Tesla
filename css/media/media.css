@@ -23,8 +23,26 @@ footer{width: 100%;}
   .modelS11-txt{width: 90%;}
   .modelS11-txt-center-btn{margin-top: 0;}
 
+
+
+
   
 }
+
+@media screen and (max-width: 850px){
+
+  .tranin-wrap{width: 100%;}
+  .tranin-wrap .train-tit{width: 80%;}
+
+  .trainIBtn-wrap{width: 80%; max-width: 420px;}
+  .trainIBtn-wrap .trainIBtn{width: 200px; height: 310px;}
+  .trainIBtn-wrap .trainIBtn .info-wrap{flex-wrap: wrap;}
+  .trainIBtn-wrap .trainIBtn .info-wrap .info{width: 100%;}
+  .infoBox{width: 200px; height: 320px;}
+
+
+}
+
 
 @media screen and (max-width: 700px){
   .modelS11-txt-center-tit{width: 100%;}
@@ -70,8 +88,23 @@ footer{bottom: 30px;}
   .solorBtn{position: absolute; top: 50%;}
 }
 
+@media screen and (max-width: 500px){
+  .trainIBtn-wrap{width: 90%; flex-wrap: wrap;}
+  .trainIBtn-wrap .trainIBtn{width: 90%; height: 200px;}
+  .trainIBtn-wrap .trainIBtn .info-wrap{flex-wrap: unset; width: 100%;}
+  .trainIBtn-wrap .trainIBtn .info-wrap .info{width: 100%;}
+  .infoBox{width: 200px; height: 320px;}
+
+  .infoBox{display: none;}
+}
+
 @media screen and (max-width: 400px){
   .layout .model-title h2{font-size: 32px;}
+  .bottomTxt{width: 80%; text-align: center;}
+
+  .modelCon .bottomCon-wrap .number{font-size: 26px; font-weight: 400;}
+  .modelCon .bottomCon-wrap .number i{font-size: 20px; font-weight: 400;}
+  .modelCon .bottomCon-wrap .number-intro{font-size: 8px;}
 }
 
 @media screen and (max-width: 350px){
