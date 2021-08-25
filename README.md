@@ -5,7 +5,7 @@
 ## Overview 😎
 
 
-리뉴얼 프로젝트의 일환으로 Tasla 웹사이트를 리뉴얼 제작해 보았습니다.  전체 page 중 index.html 과 modelS.html 페이지를 제작하였으며 scroll Event와 slide, wow plugin를 활용하여 만들었습니다. index.html의 경우 scroll Event에서 아직 해결되지 않은 [Issue](##Issue)가 있으니 아래 항목을 참조해주시면 감사하겠습니다.
+리뉴얼 프로젝트의 일환으로 Tasla 웹사이트를 리뉴얼 제작해 보았습니다.  전체 page 중 index.html 과 modelS.html 페이지를 제작하였으며 scroll Event와 slide, wow plugin를 활용하여 만들었습니다. index.html의 경우 scroll Event에서 아직 해결되지 않은 [Issue](#issue)가 있으니 아래 항목을 참조해주시면 감사하겠습니다.
 
 호스팅 링크 : [http://hby033.dothome.co.kr/renewal/index.html](http://hby033.dothome.co.kr/renewal/index.html)
 
@@ -36,7 +36,7 @@ mouse wheel plugin의 경우 아래 링크를 참조해 주세요.
     - wow plugin
     - slide function
 
-## Issue
+## <a id="issue"> Issue</a>
 
 
 현재 마우스 스크롤시 index page 내에서 auto move을 실행시키는 기능과 현재 page에 맞는 이미지를 출력하는 기능과의 충돌이 있어 정상적인 scroll event가 실행되지 않고 있습니다. 추후 update를 통해 문제를 해결할 수 있도록 노력해보겠습니다. 문제 해결을 위한 좋은 의견이 있으시다면 남겨주시면 감사하겠습니다.
