@@ -36,6 +36,12 @@ mouse wheel plugin의 경우 아래 링크를 참조해 주세요.
     - wow plugin
     - slide function
 
+## Browser Support
+
+![Chrome](https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png)</br>Chrome | ![Firefox](https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png)</br>Firefox | ![IE](https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png)</br>IE/edge | ![Opera](https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png)</br>opera | ![Safari](https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png)</br>safari
+--- | --- | --- | --- | --- |
+Latest ✔ | Latest ✔ | <span style="color:red">No Support</span></br>/ 10+ ✔ | Latest ✔ | 6.1+ ✔ |
+
 ## <a id="issue"> Issue</a>
 
 
